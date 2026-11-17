@@ -8,8 +8,13 @@ repositories {
     }
 
     maven {
+        url 'https://repo.dairy.foundation/releases/'
+    }
+
+    maven {
         url = "https://mymaven.bylazar.com/releases"
     }
+
 }
 
 dependencies {
@@ -24,16 +29,16 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
 
 
-    implementation 'com.pedropathing:ftc:2.1.1' // Pedropathing
-    implementation 'com.pedropathing:telemetry:1.0.0'
+    implementation 'com.pedropathing:revhub:3.0.2'
+    implementation 'com.pedropathing:tuning:1.0.3'
     implementation 'com.bylazar:fullpanels:1.0.12' // Panels
     implementation 'com.acmerobotics.dashboard:dashboard:0.5.0'// dashboard
 
 }
 
-// Isn't working, but I need it since soemthing I use uses OpenRC
+// Isn't working, but I need it since something I use uses OpenRC
 
-// Don't enable this, it has some... problems? Makes it not compile
+// Don't enable this, it has some problems? Makes it not compile
 // Using OpenRC, so adding for FTC-dashboard
 //implementation('com.acmerobotics.dashboard:dashboard:0.4.16') {
 //    exclude group: 'org.firstinspires.ftc'
